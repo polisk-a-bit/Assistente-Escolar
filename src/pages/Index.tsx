@@ -19,6 +19,7 @@ import { StudyTimer } from "@/components/StudyTimer";
 import { SubjectManager } from "@/components/SubjectManager";
 import { StudySchedule } from "@/components/StudySchedule";
 import { ProgressChart } from "@/components/ProgressChart";
+import { AIStudyAssistant } from "@/components/AIStudyAssistant";
 
 interface Subject {
   id: string;
@@ -172,6 +173,9 @@ const Index = () => {
 
               {/* Cronograma de Estudos */}
               <StudySchedule subjects={subjects} />
+
+              {/* Assistente de IA */}
+              <AIStudyAssistant currentSubject={currentSubject?.name} />
             </div>
 
             {/* Sidebar */}
